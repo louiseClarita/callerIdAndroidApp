@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+   <!-- <group android:checkableBehavior="single">-->
+   <!-- <item android:id="@+id/mainFragment"
+        android:title="HOME"
+        />-->
+        <item android:id="@+id/nav_signin"
+
+        android:title="SignIn"/>
+
+    <item android:id="@+id/nav_contacts"
+        android:title="contacts"/>
+    <item android:id="@+id/phonecalls"
+        android:title="phone call"/>
+    <item android:id="@+id/nav_createContacts"
+        android:title="Create contacts"/>
+    <item android:id="@+id/nav_updateDB"
+        android:icon="@drawable/ic_baseline_refresh_24"
+        android:title="update data"/>
+  <!--  </group>-->
+
+</menu>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/javistaOrange"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+
+            <TextView
+                android:id="@+id/contactrelated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_gravity="center"
+                android:gravity="center"
+
+                android:textColor="@color/white"
+                android:background="@drawable/gradient_javista"
+                android:text="contact Name"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_email_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/Relatedemail"
+            android:layout_height="wrap_content"
+            android:text=": email@microsoft.com"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Related phone calls:"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_local_phone_24"/>
+        </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:scrollbarStyle="insideOverlay" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="348dp"
+            android:id="@+id/emailLayout"
+            android:orientation="vertical">
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:id="@+id/progressBar123"
+                />
+            <TextView
+                android:id="@+id/emailstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+
+                android:text="you don't know their email....." />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="getEmails"
+                android:layout_gravity="center"
+                android:id="@+id/getEmails"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ListView
+        android:id="@+id/listview2"
+       android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="insideOverlay"
+       android:layout_marginBottom="@dimen/activity_vertical_margin"
+         />
+
+
+           </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

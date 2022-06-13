@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:backgroundTintMode="multiply"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context="com.example.calleridapplication.createContact">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@android:color/secondary_text_light_nodisable">
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/TopView"
+            android:layout_width="0dp"
+            android:layout_marginTop="100dp"
+            android:layout_height="match_parent"
+
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4"
+            app:layout_constraintVertical_bias="0.724">
+
+            <EditText
+                android:id="@+id/cr_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_borders"
+                android:ems="10"
+                android:hint="firstname"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#F4F1F1"
+                android:textColorHint="#F6F6F6"
+
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cr_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_borders"
+                android:hint="lastname"
+                android:inputType="textPersonName"
+
+
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cr_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_borders"
+                android:ems="10"
+                android:hint="company name"
+
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#F1EDEA"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cr_job"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_borders"
+                android:ems="10"
+                android:hint="job Title"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cr_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_borders"
+                android:ems="10"
+                android:hint="username@email.com"
+
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColor="#130000"
+
+                android:textColorHint="#F8F8F8"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cr_phonenbre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_borders"
+                android:ems="20"
+                android:hint="phone nbre"
+                android:inputType="number"
+                android:textAlignment="center"
+
+                android:textColor="#FFFFFF"
+                android:textColorHint="#F6F3F1"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/createContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="50dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/colorAccent"
+                android:backgroundTintMode="src_over"
+                android:gravity="center"
+                android:text="Add contact to CRM"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="373dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/transparent"
+
+            android:text="do you want to save this contact?"
+            android:textColor="@color/javistaOrange"
+            android:textSize="36sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@+id/view4"
+            app:layout_constraintHorizontal_bias="0.421"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view4" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar1"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/progressBar1"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <TextView
+            android:id="@+id/createStatus"
+            android:layout_width="242dp"
+            android:layout_height="21dp"
+
+            android:textColor="#4CAF50"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/TopView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/gotoSaveLogs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save this phone call into logs"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/createStatus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

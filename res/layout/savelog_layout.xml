@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    android:background="@null"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="50dp"
+
+        android:layout_marginTop="150dp"
+         android:id="@+id/logscardView"
+       android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="585dp"
+            android:background="@drawable/gradient_grey"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/bottomsheetWannabe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:orientation="horizontal" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:cardBackgroundColor="@color/grey">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+
+                    android:background="@drawable/transparent"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="phone number:" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="contact:" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="date and time:" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="duration:" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subject:" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/transparent"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/phNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="71753991" />
+
+                    <TextView
+                        android:id="@+id/ctct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="charbel mattar" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="dateandtime:" />
+
+                    <TextView
+                        android:id="@+id/duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="duration:" />
+
+                    <EditText
+                        android:id="@+id/subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center|fill|fill_horizontal|center_vertical"
+                        android:background="@drawable/transparent"
+                        android:hint="@string/subject"
+                        android:inputType="text"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="#FBFBFB"
+                android:backgroundTint="#FFFFFF"
+                android:backgroundTintMode="add"
+                android:hint="enter the description of the call"
+                android:inputType="textMultiLine"
+                android:padding="2dp"
+                android:textAlignment="center"
+                android:textColor="@color/javistaOrange"
+                android:textSize="15dp" />
+
+
+            <Button
+                android:id="@+id/savephonecall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/javistaOrange"
+                android:text="save phone call" />
+
+            <TextView
+                android:id="@+id/logsStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logscardView"
+
+
+                android:background="@drawable/transparent"
+
+                android:text="status"
+                android:textAlignment="center"
+                android:textColor="@color/green" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

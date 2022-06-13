@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.calleridapplication.Contacts"
+    android:isScrollContainer="true"
+    android:scrollbarStyle="insideOverlay">
+
+    <!-- TODO: Update blank fragment layout -->
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp">
+    <ListView
+
+        android:layout_margin="10dp"
+        android:isScrollContainer="true"
+        android:divider="@color/white"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:dividerHeight="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/contactsListView"/>
+</LinearLayout>
+</FrameLayout>

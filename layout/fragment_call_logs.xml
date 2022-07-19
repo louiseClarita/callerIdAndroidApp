@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100px"
+    tools:context="com.example.calleridapplication.CallLogsFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+  <ListView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/logs_listview"
+
+      android:layout_margin="10dp"/>
+
+</FrameLayout>

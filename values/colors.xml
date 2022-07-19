@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2e2e38</color>
+    <color name="colorPrimaryDark">#2e2a38</color>
+    <color name="colorAccent">#2e2a38</color>
+    <color name="background">#2e2a38</color>
+    <color name="green">#38c96d</color>
+    <color name="red">#eb4b4b</color>
+    <color name="background_dialog">#f7f7f7</color>
+    <color name="text">#a3a3a3</color>
+    <color name="blue">#0000ff</color>
+    <color name="lightblue">#1a75ff</color>
+    <color name="bluesave">#0099cc</color>
+    <color name="javistaOrange">#E55325</color>
+    <color name="javistaYellow">#FFB749</color>
+    <color name="javistaLight">#F6B49C</color>
+    <color name="javistaGrey">#2e2e1f</color>
+    <color name="offwhite">#f2f3f4</color>
+    <color name="pastelblue">#DBF1FF</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#808080</color>
+</resources>

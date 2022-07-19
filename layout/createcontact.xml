@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:backgroundTintMode="multiply"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context="com.example.calleridapplication.createContact">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:background="@drawable/gradient_grey"
+       >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="125dp"
+            android:text="Enter Contact details:"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/createprogress"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+      <!--  <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/TopView"
+            android:layout_width="0dp"
+            android:layout_marginTop="100dp"
+            android:layout_height="match_parent"
+
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+--><LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createfrag"
+        android:layout_marginBottom="30dp"
+        android:paddingBottom="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/transparent"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="First name*:"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Last name*:"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="Company*:"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="Job title*:"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text=" Email:"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+
+                android:text=" Phone Number :"
+                android:textSize="17dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4"
+            app:layout_constraintVertical_bias="0.724">
+
+            <EditText
+                android:id="@+id/cr_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:backgroundTintMode="add"
+                android:gravity="top"
+
+                android:inputType="text"
+
+                android:textAlignment="gravity"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/cr_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:backgroundTintMode="add"
+                android:gravity="top"
+                android:inputType="text"
+                android:textAlignment="gravity"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/cr_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="9dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="add"
+                android:gravity="top"
+
+                android:inputType="text"
+                android:textAlignment="gravity"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/cr_job"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="9dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="add"
+                android:gravity="top"
+
+                android:inputType="text"
+                android:textAlignment="gravity"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/cr_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="9dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="add"
+                android:gravity="top"
+
+                android:inputType="textEmailAddress"
+                android:textAlignment="gravity"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/cr_phonenbre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:background="@color/grey"
+                android:backgroundTint="@color/grey"
+                android:backgroundTintMode="add"
+                android:gravity="top"
+
+                android:inputType="number"
+                android:textAlignment="gravity"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/createStatus"
+            android:layout_width="242dp"
+            android:layout_height="21dp"
+            android:layout_gravity="center"
+            android:textColor="#4CAF50"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/TopView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/createContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:backgroundTint="@color/lightblue"
+            android:backgroundTintMode="src_over"
+
+            android:text="SAVE"
+            app:cornerRadius="20dp" />
+        <Button
+            android:id="@+id/cancelCreation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:backgroundTint="@color/colorAccent"
+            android:backgroundTintMode="src_over"
+            android:gravity="center"
+            android:text="cancel"
+            app:cornerRadius="20dp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/gotoSaveLogs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save this phone call"
+            android:visibility="visible"
+            android:layout_gravity="center"
+
+             />
+
+    </LinearLayout>
+
+</FrameLayout>

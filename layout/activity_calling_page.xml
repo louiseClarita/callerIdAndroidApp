@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    android:background="@null"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="50dp"
+    app:cardBackgroundColor="@color/white"
+
+  >
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<!--
+       <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="281-555-0161"
+            android:hint="enter the phone nbre to search"
+            android:id="@+id/GETnbre"
+            android:inputType="number"
+          />
+
+
+
+        <Button
+            android:background="@color/javistaYellow"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/GETbtn1"
+            android:text="get Button" />
+        />
+-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/bottomsheetWannabe"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:behavior_peekHeight="40dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+
+            >
+                       <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+                      </LinearLayout>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="left"
+                android:src="@mipmap/ic_dynamics_logo"
+                android:id="@+id/dynamicslogo"
+               />
+      <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+         >
+
+          <RelativeLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <Button
+
+                  android:id="@+id/buttonClose"
+                  android:layout_width="45dp"
+                  android:layout_height="45dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginRight="10dp"
+                  android:backgroundTint="@color/red"
+                  android:text="x" />
+          </RelativeLayout>
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/namecaller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="2dp"
+        android:text="searching..."
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+</RelativeLayout>
+
+          </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/companycaller"
+                android:layout_gravity="center"
+
+                android:text="-"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/jobcaller"
+                android:textSize="13dp"
+                android:layout_gravity="center"
+
+                android:text="-"/>
+
+
+
+      </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/emailList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fetch Emails"
+            android:visibility="gone"
+            android:backgroundTint="@color/javistaOrange"
+            android:id="@+id/fetchEmails1"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/openinapp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="@color/lightblue"
+                android:gravity="center"
+                android:text="More Info..."
+                android:textSize="15dp"
+                app:cornerRadius="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

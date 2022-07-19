@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Caller Id</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="Close_navigation_drawer">Close navigation drawer</string>
+    <string name="subject">subject</string>
+</resources>

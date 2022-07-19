@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:backgroundTintMode="multiply"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context="com.example.calleridapplication.createContact2">
+<!--<ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="invisible"
+    android:textAlignment="center"
+    android:layout_gravity="center"
+
+    android:id="@+id/progressBar12"/>
+
+    <LinearLayout
+        android:id="@+id/framCreateContact2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:backgroundTint="@android:color/secondary_text_light_nodisable">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/transparent"
+            android:text="Enter contact details"
+            android:textColor="@color/lightblue"
+            android:textSize="30dp"
+
+
+            android:textStyle="bold" />
+        <View
+            android:id="@+id/view4"
+            android:layout_width="412dp"
+            android:layout_height="67dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/TopView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+-->
+
+<!--
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/cr_firstname2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_borders"
+
+                android:hint="First name"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#F4F1F1"
+                android:textColorHint="#F6F6F6"
+
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cr_lastname2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_borders"
+                android:hint="Last name"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cr_company2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_borders"
+                android:hint="Company name"
+
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#F1EDEA"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cr_job2"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_borders"
+                android:hint="Job Title"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cr_email2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_borders"
+                android:ems="10"
+                android:hint="username@email.com"
+
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+
+                android:textColorHint="#F8F8F8"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cr_phonenbre2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_borders"
+                android:hint="Phone number"
+                android:inputType="number"
+                android:textAlignment="center"
+
+                android:textColor="#FFFFFF"
+                android:textColorHint="#F6F3F1"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/createStatus2"
+                android:layout_width="242dp"
+                android:layout_height="21dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#4CAF50" />
+
+            <Button
+                android:id="@+id/createContact2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="@color/lightblue"
+                android:backgroundTintMode="src_over"
+                android:gravity="center"
+                android:text="Add contact to CRM"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="@color/colorAccent"
+                android:backgroundTintMode="src_over"
+                android:text="cancel"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/gotoSaveLogs2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="save this phone call into logs"
+                android:visibility="visible"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar12"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/progressBar12"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+
+
+    </LinearLayout>-->
+</FrameLayout>
+

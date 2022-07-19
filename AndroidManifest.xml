@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.CallerIdApplication">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_javista_logo"
+        android:label="Caller Id"
+        android:roundIcon="@mipmap/ic_javista_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CallerIdApplication"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme">
+        <activity
+            android:name="com.example.calleridapplication.SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.calleridapplication.Window4Api"
+            android:enabled="true"
+            android:exported="true" />
+        <!--
+ <activity
+            android:name="com.example.calleridapplication.EmailsAdapter2"
+            android:exported="false" />
+        -->
+        <activity
+            android:name="com.example.calleridapplication.deletePopUp"
+            android:exported="false" />
+        <activity
+            android:name="com.example.calleridapplication.CallingPage"
+            android:enabled="true"
+            android:exported="true"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name="com.example.calleridapplication.Callerinfoactivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.calleridapplication.SaveLogsPage"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="true" />
+
+        <service
+            android:name="com.example.calleridapplication.ForegroundService"
+            android:enabled="true"
+            android:exported="true" />
+        <!--
+ <activity
+            android:name="com.example.calleridapplication.Callerinfoactivity"
+            android:enabled="true"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTask">
+
+
+        </activity>
+        -->
+        <activity android:name="com.example.calleridapplication.relatedCallLogs" />
+        <activity
+            android:name="com.example.calleridapplication.first"
+            android:exported="true">
+          <!--  <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.microsoft.identity.client.BrowserTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.example.calleridapplication"
+                    android:path="/6g4AsRajNlq3oLhR8ws6N2jT/2I="
+                    android:scheme="msauth" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.example.calleridapplication.callReciever"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+            <intent-filter>
+
+                <!-- <action android:name="jason.wei.custom.intent.action.TEST" /> -->
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
